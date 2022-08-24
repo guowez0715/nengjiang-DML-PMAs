@@ -1,0 +1,31 @@
+#yml文件生成
+conda env list
+##查看conda环境下的环境列表
+conda activate xxx
+##激活conda环境
+conda env export > environment
+##导出指定的conda环境到environment文件中去
+##在home文件夹下可以找到此文件
+##打开并复制environment中的内容，复制到自己的空yml文件中，即可完成自己的yml文件配置
+
+#yml文件配置
+conda env create -f environment
+##未测试，实际上在pycharm中打开yml文件，会自动弹出安装的提示
+
+#########################################################################
+#requirements.txt文件生成
+#命令在pycharm的Terminal中输入
+pip freeze > requirements.txt
+##自动生成requirements.txt文件，位置与python文件同级
+pip install -r requirements.txt
+##一键安装所有第三方库
+
+#########################################################################
+#LICENSE
+##此文件来自于广为流传的版本的复制与修改
+
+#########################################################################
+#.gitignore
+#此文件在上传至github仓库时选择生成
+
+#########################################################################
